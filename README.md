@@ -31,12 +31,18 @@ Este projeto tem como objetivo apresentar três implementações práticas e cla
 
 2. Instale as depêndencias:
 
-  ```bash
+   ```bash
    npm install
    ```
 
-3. Execute o projeto
+3. Para executar o projeto:
 
-  ```bash
+   ```bash
    npm run dev
-  ```
+   ```
+
+3. Para executar os testes:
+
+   ```bash
+   npm run test
+   ```

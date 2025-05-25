@@ -1,7 +1,4 @@
-export interface Item {
-  item: string;
-  quantity: number;
-}
+import Item from './contracts/Item';
 
 class Order {
   private items: Array<Item> = [];
@@ -12,7 +9,11 @@ class Order {
 
   constructor() {}
 
-  public addItem(item: string, quantity: number) {
+  public getItems(): Array<Item> {
+    return this.items;
+  }
+
+  public addItem(item: string, quantity: number): this {
     this.items.push({
       item,
       quantity,
@@ -21,19 +22,23 @@ class Order {
     return this;
   }
 
-  public setDeliveryAdress(item: string) {
+  public getDeliveryAddress(): string {
+    return this.deliveryAddress;
+  }
+
+  public setDeliveryAdress(item: string): this {
     this.deliveryAddress = item;
 
     return this;
   }
 
-  public setDiscountCoupon(coupon: string) {
-    this.discountCoupon = coupon;
-
-    return this;
+  public getDiscountCoupon(): string {
+    return this.discountCoupon;
   }
 
-  public build() {
+  public setDiscountCoupon(coupon: string): this {
+    this.discountCoupon = coupon;
+
     return this;
   }
 }

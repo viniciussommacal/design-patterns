@@ -1,18 +1,18 @@
-import LoggerStrategy from './contracts/LoggerStrategy';
+import LoggerStrategy, { LogLevel } from './contracts/LoggerStrategy';
 
 class Logger {
   private strategy: LoggerStrategy;
 
   constructor(strategy: LoggerStrategy) {
-    this.strategy = strategy
+    this.strategy = strategy;
   }
 
   public setStrategy(strategy: LoggerStrategy) {
     this.strategy = strategy;
   }
 
-  public log(message: string): void {
-    this.strategy.log(message);
+  public log(message: string, level?: LogLevel): void {
+    this.strategy.log(message, level);
   }
 }
 

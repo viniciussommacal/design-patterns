@@ -32,10 +32,9 @@ console.log(user);
 
 // Builder
 const order = new Order()
-  .addItem('x-bacon', 2)
+  .addItem('X-Bacon', 2)
   .addItem('Coca Lata', 2)
   .setDeliveryAdress('Avenida Higyno Muzzi Filho, 1001')
-  .setDiscountCoupon('UNIMAR20')
-  .build();
+  .setDiscountCoupon('UNIMAR20');
 
 console.log(JSON.stringify(order));
