@@ -7,7 +7,7 @@ class ApiLogger implements LoggerStrategy {
     console.log('[ApiLogger][Sended to API]', {
       message,
       level,
-      timestamp: timestamp,
+      timestamp,
     });
   }
 }
