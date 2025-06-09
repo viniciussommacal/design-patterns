@@ -1,4 +1,4 @@
-# Pós graduação - Design Patterns
+# Design Patterns com typescript :)
 
 Repositório com implementações simples e didáticas de Design Patterns usando TypeScript.
 
