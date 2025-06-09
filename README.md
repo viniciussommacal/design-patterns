@@ -25,8 +25,8 @@ Este projeto tem como objetivo apresentar três implementações práticas e cla
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/design-patterns.git
-   cd design-patterns
+   git clone https://github.com/seu-usuario/design-patterns-typescript.git
+   cd design-patterns-typescript
    ```
 
 2. Instale as depêndencias:
